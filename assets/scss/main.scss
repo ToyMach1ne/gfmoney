@@ -2548,7 +2548,7 @@ a {
       position: relative;
       float: left;
       width: 130px;
-      height: 74px;
+      height: 100px;
       margin-left: 15px;
       display: block;
       .logo {
@@ -3427,5 +3427,15 @@ a {
 .error404 {
   .header, .footer {
     display: none;
+  }
+}
+
+.gform_wrapper {
+  .invalid {
+    span {
+      .wpcf7-not-valid-tip {
+        font-size: 12px;
+      }
+    }
   }
 }

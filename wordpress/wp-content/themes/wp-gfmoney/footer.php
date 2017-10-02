@@ -5,9 +5,9 @@
                 <?php wpeFootNav(); ?>
             </div><!-- menu desktop -->
             <div class="col-lg-3 col-md-3 col-xs-12 socials">
-                <a href="https://www.youtube.com/watch?v=WyOzfckzRZ0" target="_blank" class="youtube"></a>
-                <a href="https://www.linkedin.com/company/gf-money-oy" target="_blank" class="lin"></a>
-                <a href="https://www.facebook.com/gfmoneyoy" target="_blank" class="fb"></a>
+                <a href="#" target="_blank" class="youtube"></a>
+                <a href="#" target="_blank" class="lin"></a>
+                <a href="#" target="_blank" class="fb"></a>
             </div>
         </div>
     </div>
@@ -20,7 +20,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-xs-12">
-                  <p>© 2017 GF Money Oy • Mikonkatu 2 D, 2. krs. • 00100 Helsinki</p>
+                  <p><?php the_field('copyright'); ?></p>
                 </div>
             </div>
         </div>

@@ -6,12 +6,14 @@
                 <div class="col-lg-6 col-md-6 col-xs-12 col-lg-offset-3 col-md-offset-3">
                     <section class="wrap">
                         <div class="logo-wrap">
-                            <a href="http://gfmoney.fi/" class="logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt=""></a>
+                            <a href="<?php echo home_url(); ?>" class="logo">
+                              <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
+                            </a>
                         </div>
-                        <span class="title">404</span>
+                        <span class="title"><?php the_title(); ?></span>
                         <div class="content">
-                            <span class="desc">Valitettavasti etsimääsi sivua ei löytynyt</span>
-                            <a href="<?php echo home_url(); ?>" class="button">Etusivu »</a>
+                            <span class="desc"><?php the_field('404_text' , 35); ?></span>
+                            <a href="<?php echo home_url(); ?>" class="button"><?php the_field('404_button_text' , 35); ?></a>
                         </div>
                     </section>
                 </div>

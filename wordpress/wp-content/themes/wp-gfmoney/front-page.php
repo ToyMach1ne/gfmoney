@@ -60,42 +60,23 @@
                     </div>
                     <div class="col-lg-8 col-md-8 col-xs-12">
                         <div class="steps-wrap">
+                        <?php if( have_rows('steps') ): while ( have_rows('steps') ) : the_row(); ?>
                             <div class="step-wrap">
-                                <div class="step four">
-                                    <span class="step-title">Menesty</span>
-                                    <span class="step-desc"><p>Kunnollinen ja reilu rahoitus takaa menestyksesi!</p></span>
+                                <div class="step">
+                                    <span class="step-title"><?php the_sub_field('steps_title'); ?></span>
+                                    <span class="step-desc"><p><?php the_sub_field('steps_descr'); ?></p></span>
                                 </div>
                             </div>
-                            <div class="step-wrap">
-                                <div class="step three">
-                                    <span class="step-title">Rahat tilille</span>
-                                    <span class="step-desc"><p>Oletko kyllästynyt odotteluun? Meillä ei tarvitse odotella.</p></span>
-                                </div>
-                            </div>
-                            <div class="step-wrap">
-                                <div class="step two">
-                                    <span class="step-title">Täytä lainahakemus</span>
-                                    <span class="step-desc"><p>Yksinkertainen lainahakemus tekee elämän vaivattomaksi!</p></span>
-                                </div>
-                            </div>
-                            <div class="step-wrap">
-                                <div class="step one">
-                                    <span class="step-title">Suunnittele</span>
-                                    <span class="step-desc"><p>Mikä on sinun rahoitustarpeesi? Me autamme unelmissa ja tarpeissa.</p></span>
-                                </div>
-                            </div>
-                        </div>
+                            <?php endwhile; endif; ?>
+                        </div><!-- steps-wrap -->
                     </div>
                     <div class="col-lg-4 col-md-4 col-xs-12">
                         <div class="steps-table">
-                            <span class="steps-table-title">100 M €+</span>
-                            <span class="steps-table-desc">ANNETTUJA LAINOJA</span>
-                            <span class="steps-table-separator"><span class="line"></span></span>
-                            <span class="steps-table-title">1000+</span>
-                            <span class="steps-table-desc">SIJOITTAJAA</span>
-                            <span class="steps-table-separator"><span class="line"></span></span>
-                            <span class="steps-table-title">50 000+</span>
-                            <span class="steps-table-desc">ASIAKASTA</span>
+                         <?php if( have_rows('steps_table') ): while ( have_rows('steps_table') ) : the_row(); ?>
+                            <span class="steps-table-title"><?php the_sub_field('table_title'); ?></span>
+                            <span class="steps-table-desc"><?php the_sub_field('table_descr'); ?></span>
+                            <span class="steps-table-separator"><?php the_sub_field('table_separator'); ?></span>
+                          <?php endwhile; endif; ?>
                         </div>
                     </div>
                     <div class="arrow-man desktop">
@@ -280,57 +261,26 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-8 col-xs-12">
-                        <span class="content-title">GF Money Oy — Rahoitamme ennakkoluulottomasti</span>
+                        <span class="content-title"><?php the_field('last_row_title'); ?></span>
                         <div class="content-text editor">
-                            <p>GF Money Oy on suomalainen varjopankki, joka tarjoaa vaivattomia sijoitusmuotoja sekä rahaa menestykseen!</p>
-                            <p>Toiminta-ajatuksenamme on tuoda luotettavat ja vaivattomat rahoitusratkaisut kaikkien ulottuville – oli kyseessä sitten yksityishenkilö tai yritys.</p>
-                            <p>Varjopankkina GF Money pystyy toimimaan ketterästi, mukautuen aina muuttuvan maailman vaatimuksiin. &nbsp;Tämän ansiosta päätöksenteko on vauhdikasta ja rahat siirtyvät mutkattoman nopeasti.</p>
-                            <p>Alkuperäinen varjopankki, GF Money Oy on toiminut jo vuodesta 2012 lähtien. GF Moneyn perusti Kari Keskitalo, joka uskoo suomalaiseen yrittämiseen ja haluaa käyttää osaamistaan sekä varojaan sen tukemiseksi.</p>
+                            <p><?php the_field('first_p'); ?></p>
+                            <p><?php the_field('second_p'); ?></p>
+                            <p><?php the_field('third_p'); ?></p>
+                            <p><?php the_field('fourth_p'); ?></p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-xs-12 pull-right">
-                        <div class="content-form">
+                      <div class="content-form">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/content-fig.png" alt="" class="content-form-fig desktop">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/content-fig-mobile.png" alt="" class="content-form-fig mobile">
                             <div class="gf_browser_chrome gform_wrapper" id="gform_wrapper_1">
-                                <form method="post" enctype="multipart/form-data" target="gform_ajax_frame_1" id="gform_1" action="http://gfmoney.fi/">
-                                    <div class="gform_heading">
-                                        <h3 class="gform_title">Tilaa uutiskirje</h3>
-                                        <span class="gform_description">ja kuulet aina ajantasaiset varjopankkikuulumiset!</span>
-                                    </div>
-                                    <div class="gform_body">
-                                        <ul id="gform_fields_1" class="gform_fields top_label form_sublabel_below description_below">
-                                            <li id="field_1_1" class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible">
-                                                <label class="gfield_label" for="input_1_1">Sähköpostiosoite<span class="gfield_required">*</span></label>
-                                                <div class="ginput_container ginput_container_email">
-                                                    <input name="input_1" id="input_1_1" type="text" value="" class="medium" tabindex="1" placeholder="Sähköpostiosoite *" aria-required="true" aria-invalid="false">
-                                                </div>
-                                            </li>
-                                            <li id="field_1_2" class="gfield gform_validation_container field_sublabel_below field_description_below gfield_visibility_">
-                                                <label class="gfield_label" for="input_1_2">Phone</label>
-                                                <div class="ginput_container"><input name="input_2" id="input_1_2" type="text" value=""></div>
-                                                <div class="gfield_description">This field is for validation purposes and should be left unchanged.</div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="gform_footer top_label">
-                                        <input type="submit" id="gform_submit_button_1" class="gform_button button" value="Tilaa uutiskirje »" tabindex="2" onclick="if(window[&quot;gf_submitting_1&quot;]){return false;}  window[&quot;gf_submitting_1&quot;]=true;  " onkeypress="if( event.keyCode == 13 ){ if(window[&quot;gf_submitting_1&quot;]){return false;} window[&quot;gf_submitting_1&quot;]=true;  jQuery(&quot;#gform_1&quot;).trigger(&quot;submit&quot;,[true]); }">
-                                        <input type="hidden" name="gform_ajax" value="form_id=1&amp;title=1&amp;description=1&amp;tabindex=1">
-                                        <input type="hidden" class="gform_hidden" name="is_submit_1" value="1">
-                                        <input type="hidden" class="gform_hidden" name="gform_submit" value="1">
-                                        <input type="hidden" class="gform_hidden" name="gform_unique_id" value="">
-                                        <input type="hidden" class="gform_hidden" name="state_1" value="WyJbXSIsIjM4ZTIxOWE1MGQyOWFhNDE2ODNhMjNhMDBhMDU0ZjQwIl0=">
-                                        <input type="hidden" class="gform_hidden" name="gform_target_page_number_1" id="gform_target_page_number_1" value="0">
-                                        <input type="hidden" class="gform_hidden" name="gform_source_page_number_1" id="gform_source_page_number_1" value="1">
-                                        <input type="hidden" name="gform_field_values" value="">
-                                    </div>
-                                </form>
+                                <?php echo do_shortcode('[contact-form-7 id="53" title="FP form"]'); ?>
                             </div><!-- gf_browser_chrome gform_wrapper -->
-                </div><!-- content-form -->
-            </div><!-- pull-right -->
-         </div>
-      </div>
-    </section><!-- content -->
+                      </div><!-- content-form -->
+                    </div><!-- pull-right -->
+                  </div>
+            </div>
+        </section><!-- content -->
 </main>
 
 <?php get_footer(); ?>
