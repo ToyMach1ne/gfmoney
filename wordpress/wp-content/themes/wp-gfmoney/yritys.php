@@ -13,17 +13,17 @@
                         <?php endwhile; endif; ?>
                             <div class="content-images">
                                 <p>
-                                    <a href="https://www.lainasto.fi/" target="_blank" rel="noopener noreferrer">
+                                    <a href="#" target="_blank" rel="noopener noreferrer">
                                       <?php $image = get_field('img_one'); if( !empty($image) ): ?>
                                         <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                                       <?php endif; ?>
                                     </a>
-                                    <a href="https://korkeatuottoinen.fi/" target="_blank" rel="noopener noreferrer">
+                                    <a href="#" target="_blank" rel="noopener noreferrer">
                                       <?php $image2 = get_field('img_two'); if( !empty($image2) ): ?>
                                         <img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" />
                                       <?php endif; ?>
                                     </a>
-                                    <a href="http://www.westhouse.fi/" target="_blank" rel="noopener noreferrer">
+                                    <a href="#" target="_blank" rel="noopener noreferrer">
                                       <?php $image3 = get_field('img_three'); if( !empty($image3) ): ?>
                                         <img src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>" />
                                       <?php endif; ?>
