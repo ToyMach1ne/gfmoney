@@ -7,34 +7,34 @@
                 <div class="row">
                     <div class="banner-wrap">
                         <div class="col-lg-6 col-md-6 col-xs-12 pull-right">
-                            <span class="banner-title"><?php the_field('fp_title'); ?></span>
-                            <span class="banner-desc"><p><?php the_field('fp_undertitle'); ?></p></span>
+                            <span class="banner-title">RAHAA MENESTYKSEEN</span>
+                            <span class="banner-desc"><p>Alkuperäinen varjopankki on ollut suomalaisten menestyksen<br>takana jo vuodesta 2012</p></span>
                         </div>
                         <div class="banner-links">
                             <div class="col-lg-4 col-md-4 col-xs-12">
                                 <div class="figure yellow">
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/yellow-fig.png" alt="" class="figure-img desktop">
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/yellow-fig-mobile.png" alt="" class="figure-img mobile">
-                                    <span class="figure-title editor"><p><?php the_field('yellow_block_title'); ?></p></span>
-                                    <span class="figure-desc"><p><?php the_field('yellow_block_undertitle'); ?></p></span>
-                                    <a href="<?php echo home_url(); ?>/lainahakemus" class="figure-link"><?php the_field('yellow_block_link'); ?></a>
+                                    <span class="figure-title editor"><p>Yritys <b>LAINAT</b></p></span>
+                                    <span class="figure-desc"><p>Rahaa menestykseen</p></span>
+                                    <a href="/lainahakemus.htm" class="figure-link">Avaa lomake »</a>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-xs-12">
                                 <div class="figure white">
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/white-fig.png" alt="" class="figure-img desktop">
-                                    <span class="figure-title editor"><p><?php the_field('grey_block_title'); ?></p></span>
-                                    <span class="figure-desc"><p><?php the_field('grey_block_undertitle'); ?></p></span>
-                                    <a href="#" target="_blank" class="figure-link"><?php the_field('grey_block_link'); ?></a>
+                                    <span class="figure-title editor"><p>KULUTUS <b>LUOTOT</b></p></span>
+                                    <span class="figure-desc"><p>VAIVATONTA&nbsp;RAHOITUSTA</p></span>
+                                    <a href="#" target="_blank" class="figure-link">Avaa lainasto.fi »</a>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-xs-12">
                                 <div class="figure grey">
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/grey-fig.png" alt="" class="figure-img desktop">
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/grey-fig-mobile.png" alt="" class="figure-img mobile">
-                                    <span class="figure-title editor"><p><?php the_field('black_block_title'); ?></p></span>
-                                    <span class="figure-desc"><p><?php the_field('black_block_undertitle'); ?></p></span>
-                                    <a href="#" target="_blank" class="figure-link"><?php the_field('black_block_link'); ?></a>
+                                    <span class="figure-title editor"><p>SIJOITUS <b>PALVELUT</b></p></span>
+                                    <span class="figure-desc"><p>TASAINEN TUOTTO RAHALLE</p></span>
+                                    <a href="#" target="_blank" class="figure-link">Avaa korkeatuottoinen.fi »</a>
                                 </div>
                             </div>
                         </div><!-- banner-links -->
@@ -43,40 +43,60 @@
             </div>
         </section><!-- banner -->
 
- <section class="redirect">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-xs-12">
-                    <a href="#" target="_blank" class="redirect-link"><p><?php the_field('grey_bg_text'); ?></p></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="steps animation-element">
+       <section class="redirect">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-12 col-md-12 col-xs-12">
+                          <a href="#" target="_blank" class="redirect-link"><p><strong>KIINTEISTÖN</strong>VÄLITYS - Avaa westhouse.fi</p></a>
+                      </div>
+                  </div>
+              </div>
+      </section><!-- redirect -->
+
+      <section class="steps animation-element">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-xs-12">
-                        <span class="steps-title"><?php the_field('big_title_second_row'); ?></span>
+                        <span class="steps-title">Näin varjopankki rahoittaa</span>
                     </div>
                     <div class="col-lg-8 col-md-8 col-xs-12">
                         <div class="steps-wrap">
-                        <?php if( have_rows('steps') ): while ( have_rows('steps') ) : the_row(); ?>
                             <div class="step-wrap">
-                                <div class="step">
-                                    <span class="step-title"><?php the_sub_field('steps_title'); ?></span>
-                                    <span class="step-desc"><p><?php the_sub_field('steps_descr'); ?></p></span>
+                                <div class="step four">
+                                    <span class="step-title">Menesty</span>
+                                    <span class="step-desc"><p>Kunnollinen ja reilu rahoitus takaa menestyksesi!</p></span>
                                 </div>
                             </div>
-                            <?php endwhile; endif; ?>
-                        </div><!-- steps-wrap -->
+                            <div class="step-wrap">
+                                <div class="step three">
+                                    <span class="step-title">Rahat tilille</span>
+                                    <span class="step-desc"><p>Oletko kyllästynyt odotteluun? Meillä ei tarvitse odotella.</p></span>
+                                </div>
+                            </div>
+                            <div class="step-wrap">
+                                <div class="step two">
+                                    <span class="step-title">Täytä lainahakemus</span>
+                                    <span class="step-desc"><p>Yksinkertainen lainahakemus tekee elämän vaivattomaksi!</p></span>
+                                </div>
+                            </div>
+                            <div class="step-wrap">
+                                <div class="step one">
+                                    <span class="step-title">Suunnittele</span>
+                                    <span class="step-desc"><p>Mikä on sinun rahoitustarpeesi? Me autamme unelmissa ja tarpeissa.</p></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-xs-12">
                         <div class="steps-table">
-                         <?php if( have_rows('steps_table') ): while ( have_rows('steps_table') ) : the_row(); ?>
-                            <span class="steps-table-title"><?php the_sub_field('table_title'); ?></span>
-                            <span class="steps-table-desc"><?php the_sub_field('table_descr'); ?></span>
-                            <span class="steps-table-separator"><?php the_sub_field('table_separator'); ?></span>
-                          <?php endwhile; endif; ?>
+                            <span class="steps-table-title">100 M €+</span>
+                            <span class="steps-table-desc">ANNETTUJA LAINOJA</span>
+                            <span class="steps-table-separator"><span class="line"></span></span>
+                            <span class="steps-table-title">1000+</span>
+                            <span class="steps-table-desc">SIJOITTAJAA</span>
+                            <span class="steps-table-separator"><span class="line"></span></span>
+                            <span class="steps-table-title">50 000+</span>
+                            <span class="steps-table-desc">ASIAKASTA</span>
                         </div>
                     </div>
                     <div class="arrow-man desktop">
@@ -257,30 +277,31 @@
                         </div>
                       </div>
                      </section><!-- steps animation-element -->
-        <section class="content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-8 col-xs-12">
-                        <span class="content-title"><?php the_field('last_row_title'); ?></span>
-                        <div class="content-text editor">
-                            <p><?php the_field('first_p'); ?></p>
-                            <p><?php the_field('second_p'); ?></p>
-                            <p><?php the_field('third_p'); ?></p>
-                            <p><?php the_field('fourth_p'); ?></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-xs-12 pull-right">
-                      <div class="content-form">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/content-fig.png" alt="" class="content-form-fig desktop">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/content-fig-mobile.png" alt="" class="content-form-fig mobile">
-                            <div class="gf_browser_chrome gform_wrapper" id="gform_wrapper_1">
-                                <?php echo do_shortcode('[contact-form-7 id="53" title="FP form"]'); ?>
-                            </div><!-- gf_browser_chrome gform_wrapper -->
+
+              <section class="content">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-8 col-md-8 col-xs-12">
+                              <span class="content-title">GF Money Oy — Rahoitamme ennakkoluulottomasti</span>
+                              <div class="content-text editor">
+                                  <p>GF Money Oy on suomalainen varjopankki, joka tarjoaa vaivattomia sijoitusmuotoja sekä rahaa menestykseen!</p>
+                                  <p>Toiminta-ajatuksenamme on tuoda luotettavat ja vaivattomat rahoitusratkaisut kaikkien ulottuville – oli kyseessä sitten yksityishenkilö tai yritys.</p>
+                                  <p>Varjopankkina GF Money pystyy toimimaan ketterästi, mukautuen aina muuttuvan maailman vaatimuksiin. &nbsp;Tämän ansiosta päätöksenteko on vauhdikasta ja rahat siirtyvät mutkattoman nopeasti.</p>
+                                  <p>Alkuperäinen varjopankki, GF Money Oy on toiminut jo vuodesta 2012 lähtien. GF Moneyn perusti Kari Keskitalo, joka uskoo suomalaiseen yrittämiseen ja haluaa käyttää osaamistaan sekä varojaan sen tukemiseksi.</p>
+                              </div>
+                          </div>
+                          <div class="col-lg-3 col-md-3 col-xs-12 pull-right">
+                              <div class="content-form">
+                                  <img src="<?php echo get_template_directory_uri(); ?>/img/content-fig.png" alt="" class="content-form-fig desktop">
+                                  <img src="<?php echo get_template_directory_uri(); ?>/img/content-fig-mobile.png" alt="" class="content-form-fig mobile">
+                                  <div class="gf_browser_chrome gform_wrapper" id="gform_wrapper_1">
+                                      <?php echo do_shortcode('[contact-form-7 id="53" title="FP form"]'); ?>
+                                  </div><!-- gf_browser_chrome gform_wrapper -->
                       </div><!-- content-form -->
-                    </div><!-- pull-right -->
-                  </div>
+                  </div><!-- pull-right -->
+               </div>
             </div>
-        </section><!-- content -->
+          </section><!-- content -->
 </main>
 
 <?php get_footer(); ?>

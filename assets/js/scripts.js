@@ -23,8 +23,9 @@ if (typeof jQuery === 'undefined') {
 // Place any jQuery/helper plugins in here.
 
 //animation blocks classes
-$('.step-wrap:nth-child(1) .step').addClass('four');
+
+/*$('.step-wrap:nth-child(1) .step').addClass('four');
 $('.step-wrap:nth-child(2) .step').addClass('three');
 $('.step-wrap:nth-child(3) .step').addClass('two');
 $('.step-wrap:nth-child(4) .step').addClass('one');
-
+*/

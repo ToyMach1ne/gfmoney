@@ -14,19 +14,13 @@
                             <div class="content-images">
                                 <p>
                                     <a href="#" target="_blank" rel="noopener noreferrer">
-                                      <?php $image = get_field('img_one'); if( !empty($image) ): ?>
-                                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                                      <?php endif; ?>
+                                      <img class="alignnone wp-image-38 size-medium" src="<?php echo get_template_directory_uri(); ?>/img/lainasto_logo-300x238.png" alt="" width="300" height="238">
                                     </a>
                                     <a href="#" target="_blank" rel="noopener noreferrer">
-                                      <?php $image2 = get_field('img_two'); if( !empty($image2) ): ?>
-                                        <img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" />
-                                      <?php endif; ?>
+                                      <img class="alignnone wp-image-42 size-medium" src="<?php echo get_template_directory_uri(); ?>/img/korkeatuottoinen-logo-300x64.png" alt="" width="300" height="64">
                                     </a>
                                     <a href="#" target="_blank" rel="noopener noreferrer">
-                                      <?php $image3 = get_field('img_three'); if( !empty($image3) ): ?>
-                                        <img src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>" />
-                                      <?php endif; ?>
+                                      <img class="alignnone wp-image-39 size-full" src="<?php echo get_template_directory_uri(); ?>/img/westhouse_logo.png" alt="" width="221" height="30">
                                     </a>
                                 </p>
                             </div>

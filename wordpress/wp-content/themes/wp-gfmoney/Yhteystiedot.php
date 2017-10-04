@@ -10,8 +10,8 @@
                     <div class="col-lg-9 col-md-9 col-xs-12 pull-right">
                         <span class="content-title"><?php the_title(); ?></span>
                         <div class="content-text editor">
-                            <p><?php the_field('company_name'); ?></p>
-                            <p><?php the_field('company_adress'); ?></p>
+                            <p>GF Money Oy</p>
+                            <p>Mikonkatu 2 D, 2. krs., 00100 Helsinki</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-xs-12 col-lg-offset-5 col-md-offset-5">
@@ -23,24 +23,74 @@
                         </div>
                     </div><!-- col-md-4 -->
                     <div class="col-lg-9 col-md-9 col-xs-12 pull-right staff">
-                        <span class="staff-title"><?php the_field('second_row_title'); ?></span>
+                        <span class="staff-title">Henkilöstö</span>
                         <div class="staff-wrap">
-                          <?php if( have_rows('person_repeat') ): while ( have_rows('person_repeat') ) : the_row();
-                          // vars
-                          $image = get_sub_field('person_thumb');?>
-                            <div class="person">
-                                <div class="person-img">
-                                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-                                </div>
-                                <span class="person-title"><?php the_sub_field('person_name'); ?></span>
-                                <span class="person-desc"><?php the_sub_field('person_desc'); ?></span>
-                                <span class="person-info editor">
-                                  <p style="text-align: center;"><?php the_sub_field('person_phone'); ?></p>
-                                  <p style="text-align: center;"><?php the_sub_field('person_email'); ?></p>
-                                </span>
+                          <div class="person">
+                            <div class="person-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" height="272" width="224">
                             </div>
-                          <?php endwhile; endif; ?>
-                        </div>
+                            <span class="person-title">Mikko Mali</span>
+                            <span class="person-desc">Toimitusjohtaja</span>
+                            <span class="person-info editor">
+                              <p style="text-align: center;">Puhelin: 0500 544 449</p>
+                              <p style="text-align: center;">mikko.mali@gfmoney.fi</p>
+                            </span>
+                          </div>
+                           <div class="person">
+                             <div class="person-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" height="272" width="224">
+                             </div>
+                            <span class="person-title">Riku Nisula</span>
+                            <span class="person-desc">Laina- ja sijoitusasiat</span>
+                            <span class="person-info editor">
+                              <p style="text-align: center;">Puhelin: 040 826 2193</p>
+                              <p style="text-align: center;">riku.nisula@gfmoney.fi</p>
+                            </span>
+                          </div>
+                          <div class="person">
+                           <div class="person-img">
+                             <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" height="272" width="224">
+                            </div>
+                            <span class="person-title">Anna Wiedebaum</span>
+                            <span class="person-desc">Hallintopäällikkö</span>
+                            <span class="person-info editor">
+                              <p style="text-align: center;">Puhelin: 040 169 4454</p>
+                              <p style="text-align: center;">anna.wiedebaum@gfmoney.fi</p>
+                            </span>
+                          </div>
+                          <div class="person">
+                            <div class="person-img">
+                              <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" height="272" width="224">
+                            </div>
+                              <span class="person-title">Mia Lehtonen</span>
+                              <span class="person-desc">Taloushallinnon asiantuntija</span>
+                              <span class="person-info editor">
+                                <p style="text-align: center;">Puhelin: 044 509 1828</p>
+                                <p style="text-align: center;">mia.lehtonen@gfmoney.fi</p>
+                              </span>
+                          </div>
+                          <div class="person">
+                            <div class="person-img">
+                               <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" height="272" width="224">
+                            </div>
+                             <span class="person-title">Kari Keskitalo</span>
+                             <span class="person-desc">Perustaja ja pääosakas</span>
+                            <span class="person-info editor">
+                              <p style="text-align: center;">Puhelin: 040 826 2193</p>
+                              <p style="text-align: center;">kari.keskitalo@gfmoney.fi</p>
+                            </span>
+                          </div>
+                          <div class="person">
+                            <div class="person-img">
+                              <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" height="272" width="224">
+                            </div>
+                              <span class="person-title">Salla Heikkonen</span>
+                              <span class="person-desc">Taloushallinnon asiantuntija</span>
+                              <span class="person-info editor">
+                                <p>Puhelin: 040 827 1050<br>salla.heikkonen@gfmoney.fi</p>
+                              </span>
+                          </div>
+                        </div><!-- staff-wrap -->
                     </div>
                 </div>
             </div>

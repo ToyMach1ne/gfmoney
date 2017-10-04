@@ -1,9 +1,9 @@
 <?php
-define('DB_NAME', 'gfmoney');
-define('DB_USER', 'gfmoney');
-define('DB_PASSWORD', 'gfmoney');
+define('DB_NAME', 'p284179_saitde1');
+define('DB_USER', 'p284179_saitde1');
+define('DB_PASSWORD', 'XpFr2vq6E8');
 
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'p284179.mysql.ihc.ru');
 
 define('DISABLE_WP_CRON', true);
 define('FS_METHOD', 'direct');

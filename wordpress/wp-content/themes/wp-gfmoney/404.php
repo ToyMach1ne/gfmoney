@@ -12,8 +12,8 @@
                         </div>
                         <span class="title"><?php the_title(); ?></span>
                         <div class="content">
-                            <span class="desc"><?php the_field('404_text' , 35); ?></span>
-                            <a href="<?php echo home_url(); ?>" class="button"><?php the_field('404_button_text' , 35); ?></a>
+                            <span class="desc">Valitettavasti etsimääsi sivua ei löytynyt</span>
+                            <a href="<?php echo home_url(); ?>" class="button">Etusivu »</a>
                         </div>
                     </section>
                 </div>

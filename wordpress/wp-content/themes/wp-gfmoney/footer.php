@@ -20,7 +20,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-xs-12">
-                  <p><?php the_field('copyright'); ?></p>
+                  <p>© 2017 GF Money Oy • Mikonkatu 2 D, 2. krs. • 00100 Helsinki</p>
                 </div>
             </div>
         </div>
